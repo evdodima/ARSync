@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ARSync_Example' do
+  pod 'ARSync', :path => '../'
+
+  target 'ARSync_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
