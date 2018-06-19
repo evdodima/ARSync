@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066544475D5740B5141D9277794A4D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1B433B577127A87B872F43D4CF4935EA /* Pods-ARSync_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF027B2BF0D80F70EEE6E762AA285B8 /* Pods-ARSync_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		543FD91992D1271E115334053C7891B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5A92B7EB98C88B1B86C17D5A5EF8F18C /* ARSync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21847CCBCC0D47C24681C5415C999734 /* ARSync-dummy.m */; };
+		602FA51326E7ADAD3889AF6A88954395 /* Pods-ARSync_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A279898CA1D76091BAAE1A92BA2E299F /* Pods-ARSync_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E1A2C0AB7BBE1D964970BDDD82BD36B /* Pods-ARSync_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79111D151F459CBB0EAAA7C87EDFDBC2 /* Pods-ARSync_Tests-dummy.m */; };
+		8E0673A120D8FDF8005B980B /* ConnectionManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06739C20D8FDF7005B980B /* ConnectionManagerDelegate.swift */; };
+		8E0673A220D8FDF8005B980B /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06739D20D8FDF7005B980B /* CodableExtensions.swift */; };
+		8E0673A320D8FDF8005B980B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06739E20D8FDF8005B980B /* Event.swift */; };
+		8E0673A420D8FDF8005B980B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E06739F20D8FDF8005B980B /* Utils.swift */; };
+		8E0673A520D8FDF8005B980B /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0673A020D8FDF8005B980B /* ConnectionManager.swift */; };
+		933C5B2194D1597468F5BB3CE8641F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BAAF77135C667FBEAD2FB2AC4979EEEA /* Pods-ARSync_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CA63127AC4C75F25782D75564F1B0 /* Pods-ARSync_Example-dummy.m */; };
+		C07DCAEEE1A6376B81C7C948E43576CF /* ARSync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC0762F98B7779891D192CE32FFD863 /* ARSync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B65471FB5AF3FC0DF6B0A42198D01CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A65758CEFAFB1112163373CED42858C;
+			remoteInfo = ARSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00EF635A45DD878AB4BA092F5403D4DB /* ARSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		064DDD18DD6A52B260473331478261F3 /* Pods-ARSync_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARSync_Tests.modulemap"; sourceTree = "<group>"; };
+		0AB188B43096020CF0B6F3296B10B27B /* Pods_ARSync_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARSync_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		129A0F70732F2E55344070FF4104C912 /* ARSync-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSync-prefix.pch"; sourceTree = "<group>"; };
+		21847CCBCC0D47C24681C5415C999734 /* ARSync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARSync-dummy.m"; sourceTree = "<group>"; };
+		2FC0762F98B7779891D192CE32FFD863 /* ARSync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSync-umbrella.h"; sourceTree = "<group>"; };
+		402F70528654D1BBB3D7C1FC0700D3B8 /* Pods-ARSync_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARSync_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5E186BBB78E6CE57A9802959423D114A /* Pods-ARSync_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARSync_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5E1CA63127AC4C75F25782D75564F1B0 /* Pods-ARSync_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARSync_Example-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A328BE76B52A0D40BAD0DEB46E3DAC8 /* Pods-ARSync_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARSync_Tests-resources.sh"; sourceTree = "<group>"; };
+		73C10439F258F0B96D10795D7DDCECE9 /* ARSync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARSync.modulemap; sourceTree = "<group>"; };
+		7632366CEDFF3F90409A5A62170E9574 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79111D151F459CBB0EAAA7C87EDFDBC2 /* Pods-ARSync_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARSync_Tests-dummy.m"; sourceTree = "<group>"; };
+		7B67CBACAD7FDD0FA14ED82400F66492 /* Pods_ARSync_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARSync_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88994AD40EAE89CCB063CFEF355EBD7D /* Pods-ARSync_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARSync_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8C8962CCF3FB4838015F2FB690DE219B /* Pods-ARSync_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARSync_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8DE16285A36944AD6014BB625A29D6BA /* Pods-ARSync_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARSync_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8E06739C20D8FDF7005B980B /* ConnectionManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManagerDelegate.swift; sourceTree = "<group>"; };
+		8E06739D20D8FDF7005B980B /* CodableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
+		8E06739E20D8FDF8005B980B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8E06739F20D8FDF8005B980B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8E0673A020D8FDF8005B980B /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B32BEB9995AEE41CD64A4F2D6C73CD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF027B2BF0D80F70EEE6E762AA285B8 /* Pods-ARSync_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARSync_Example-umbrella.h"; sourceTree = "<group>"; };
+		A279898CA1D76091BAAE1A92BA2E299F /* Pods-ARSync_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARSync_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BDFD3EE8BC0DF72F48E90F1D76691656 /* Pods-ARSync_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARSync_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF9348233A673744C0C381CBC90E89D3 /* Pods-ARSync_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARSync_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C0BE444EDC29AA556F56071F72D1C300 /* Pods-ARSync_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARSync_Example.modulemap"; sourceTree = "<group>"; };
+		C50CDF55673D35D8F71B3CC018544748 /* Pods-ARSync_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARSync_Example-resources.sh"; sourceTree = "<group>"; };
+		D1872A19F4BA9AADC5CCA043A558A89A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D435EA572012A54F2E1FE9E7296546C8 /* ARSync.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARSync.xcconfig; sourceTree = "<group>"; };
+		D76EAD8396D1B51CF083ECB27CCE6C77 /* ARSync.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ARSync.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5CB23A7C3405C5B1B6DFB8565A74969 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F38A7B16A9EDDAB55748AD85EE90E424 /* Pods-ARSync_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARSync_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4EE3189FA9B0500CF62B47B0E9F40FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FAA333F0062F3A774FF494256275C95B /* Pods-ARSync_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARSync_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2BE8BA9B454FB74E3BFDF750342336 /* Pods-ARSync_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARSync_Tests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F186186AA2258457A597703D7DD796F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FD91992D1271E115334053C7891B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		472B042AF2232BC3FF10B29BA8A9536C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933C5B2194D1597468F5BB3CE8641F8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB755696CC8443594A37DC89FE696A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				066544475D5740B5141D9277794A4D3E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1146A8A27CC9FA6CB7E86E88408353C2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AA8D332F4C6D03077A88990CCAA1800 /* Pods-ARSync_Example */,
+				DCE6B30CF9BAE9CEC9FDFB562F4B1AFB /* Pods-ARSync_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2AA8D332F4C6D03077A88990CCAA1800 /* Pods-ARSync_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9B32BEB9995AEE41CD64A4F2D6C73CD7 /* Info.plist */,
+				C0BE444EDC29AA556F56071F72D1C300 /* Pods-ARSync_Example.modulemap */,
+				8C8962CCF3FB4838015F2FB690DE219B /* Pods-ARSync_Example-acknowledgements.markdown */,
+				BDFD3EE8BC0DF72F48E90F1D76691656 /* Pods-ARSync_Example-acknowledgements.plist */,
+				5E1CA63127AC4C75F25782D75564F1B0 /* Pods-ARSync_Example-dummy.m */,
+				88994AD40EAE89CCB063CFEF355EBD7D /* Pods-ARSync_Example-frameworks.sh */,
+				C50CDF55673D35D8F71B3CC018544748 /* Pods-ARSync_Example-resources.sh */,
+				9DF027B2BF0D80F70EEE6E762AA285B8 /* Pods-ARSync_Example-umbrella.h */,
+				FAA333F0062F3A774FF494256275C95B /* Pods-ARSync_Example.debug.xcconfig */,
+				BF9348233A673744C0C381CBC90E89D3 /* Pods-ARSync_Example.release.xcconfig */,
+			);
+			name = "Pods-ARSync_Example";
+			path = "Target Support Files/Pods-ARSync_Example";
+			sourceTree = "<group>";
+		};
+		791B2BC87BB8756ED9ADBB3B283464DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00EF635A45DD878AB4BA092F5403D4DB /* ARSync.framework */,
+				0AB188B43096020CF0B6F3296B10B27B /* Pods_ARSync_Example.framework */,
+				7B67CBACAD7FDD0FA14ED82400F66492 /* Pods_ARSync_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				88E39A3C5485BF1FA122C5B3EF448E7C /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				791B2BC87BB8756ED9ADBB3B283464DB /* Products */,
+				1146A8A27CC9FA6CB7E86E88408353C2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		883EAFDE9318007E59CCEBB6F45A0699 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D76EAD8396D1B51CF083ECB27CCE6C77 /* ARSync.podspec */,
+				E5CB23A7C3405C5B1B6DFB8565A74969 /* LICENSE */,
+				F4EE3189FA9B0500CF62B47B0E9F40FE /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		88E39A3C5485BF1FA122C5B3EF448E7C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1D3F0E097E407A42698DE0F297F5E0F /* ARSync */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A1D3F0E097E407A42698DE0F297F5E0F /* ARSync */ = {
+			isa = PBXGroup;
+			children = (
+				8E06739D20D8FDF7005B980B /* CodableExtensions.swift */,
+				8E0673A020D8FDF8005B980B /* ConnectionManager.swift */,
+				8E06739C20D8FDF7005B980B /* ConnectionManagerDelegate.swift */,
+				8E06739E20D8FDF8005B980B /* Event.swift */,
+				8E06739F20D8FDF8005B980B /* Utils.swift */,
+				883EAFDE9318007E59CCEBB6F45A0699 /* Pod */,
+				CFCD23AC23A97FDFABEADDC18A2741FC /* Support Files */,
+			);
+			name = ARSync;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFCD23AC23A97FDFABEADDC18A2741FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73C10439F258F0B96D10795D7DDCECE9 /* ARSync.modulemap */,
+				D435EA572012A54F2E1FE9E7296546C8 /* ARSync.xcconfig */,
+				21847CCBCC0D47C24681C5415C999734 /* ARSync-dummy.m */,
+				129A0F70732F2E55344070FF4104C912 /* ARSync-prefix.pch */,
+				2FC0762F98B7779891D192CE32FFD863 /* ARSync-umbrella.h */,
+				7632366CEDFF3F90409A5A62170E9574 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARSync";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DCE6B30CF9BAE9CEC9FDFB562F4B1AFB /* Pods-ARSync_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1872A19F4BA9AADC5CCA043A558A89A /* Info.plist */,
+				064DDD18DD6A52B260473331478261F3 /* Pods-ARSync_Tests.modulemap */,
+				402F70528654D1BBB3D7C1FC0700D3B8 /* Pods-ARSync_Tests-acknowledgements.markdown */,
+				8DE16285A36944AD6014BB625A29D6BA /* Pods-ARSync_Tests-acknowledgements.plist */,
+				79111D151F459CBB0EAAA7C87EDFDBC2 /* Pods-ARSync_Tests-dummy.m */,
+				FC2BE8BA9B454FB74E3BFDF750342336 /* Pods-ARSync_Tests-frameworks.sh */,
+				6A328BE76B52A0D40BAD0DEB46E3DAC8 /* Pods-ARSync_Tests-resources.sh */,
+				A279898CA1D76091BAAE1A92BA2E299F /* Pods-ARSync_Tests-umbrella.h */,
+				F38A7B16A9EDDAB55748AD85EE90E424 /* Pods-ARSync_Tests.debug.xcconfig */,
+				5E186BBB78E6CE57A9802959423D114A /* Pods-ARSync_Tests.release.xcconfig */,
+			);
+			name = "Pods-ARSync_Tests";
+			path = "Target Support Files/Pods-ARSync_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		780EDAA4D699F9FA5FA4DE8C29FCA269 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602FA51326E7ADAD3889AF6A88954395 /* Pods-ARSync_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		781467D8542B3B3ACD9BBF183BF02455 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07DCAEEE1A6376B81C7C948E43576CF /* ARSync-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D62D903A0F39E88F3E772D3C6EA1F102 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B433B577127A87B872F43D4CF4935EA /* Pods-ARSync_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0462979F56C15956FC0751FC757FE08D /* Pods-ARSync_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2E2DF680AEA5A8143038B4A4AF52B92 /* Build configuration list for PBXNativeTarget "Pods-ARSync_Tests" */;
+			buildPhases = (
+				680B93106372AF5A8B34E4B6B94AB872 /* Sources */,
+				472B042AF2232BC3FF10B29BA8A9536C /* Frameworks */,
+				780EDAA4D699F9FA5FA4DE8C29FCA269 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ARSync_Tests";
+			productName = "Pods-ARSync_Tests";
+			productReference = 7B67CBACAD7FDD0FA14ED82400F66492 /* Pods_ARSync_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A65758CEFAFB1112163373CED42858C /* ARSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872A8B6340B7AAF5EDF37ADE5E50952B /* Build configuration list for PBXNativeTarget "ARSync" */;
+			buildPhases = (
+				FB324C30D11A7DBDF89449B46B967CE3 /* Sources */,
+				FB755696CC8443594A37DC89FE696A91 /* Frameworks */,
+				781467D8542B3B3ACD9BBF183BF02455 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARSync;
+			productName = ARSync;
+			productReference = 00EF635A45DD878AB4BA092F5403D4DB /* ARSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1D1E2B88C2FE0F5FC26670CB93C9976 /* Pods-ARSync_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A881CB1F9A6635B2290AB080A82DEC07 /* Build configuration list for PBXNativeTarget "Pods-ARSync_Example" */;
+			buildPhases = (
+				1D1C7AFA1AC118E5AFB401D5C18A7782 /* Sources */,
+				3F186186AA2258457A597703D7DD796F /* Frameworks */,
+				D62D903A0F39E88F3E772D3C6EA1F102 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FC7B022FB138277A429AA8233B902E /* PBXTargetDependency */,
+			);
+			name = "Pods-ARSync_Example";
+			productName = "Pods-ARSync_Example";
+			productReference = 0AB188B43096020CF0B6F3296B10B27B /* Pods_ARSync_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					5A65758CEFAFB1112163373CED42858C = {
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 791B2BC87BB8756ED9ADBB3B283464DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A65758CEFAFB1112163373CED42858C /* ARSync */,
+				C1D1E2B88C2FE0F5FC26670CB93C9976 /* Pods-ARSync_Example */,
+				0462979F56C15956FC0751FC757FE08D /* Pods-ARSync_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D1C7AFA1AC118E5AFB401D5C18A7782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAAF77135C667FBEAD2FB2AC4979EEEA /* Pods-ARSync_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680B93106372AF5A8B34E4B6B94AB872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E1A2C0AB7BBE1D964970BDDD82BD36B /* Pods-ARSync_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB324C30D11A7DBDF89449B46B967CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0673A420D8FDF8005B980B /* Utils.swift in Sources */,
+				8E0673A520D8FDF8005B980B /* ConnectionManager.swift in Sources */,
+				8E0673A320D8FDF8005B980B /* Event.swift in Sources */,
+				8E0673A120D8FDF8005B980B /* ConnectionManagerDelegate.swift in Sources */,
+				5A92B7EB98C88B1B86C17D5A5EF8F18C /* ARSync-dummy.m in Sources */,
+				8E0673A220D8FDF8005B980B /* CodableExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FC7B022FB138277A429AA8233B902E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARSync;
+			target = 5A65758CEFAFB1112163373CED42858C /* ARSync */;
+			targetProxy = 8B65471FB5AF3FC0DF6B0A42198D01CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34C25B5B173ED81B9C9084BA381A641F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D435EA572012A54F2E1FE9E7296546C8 /* ARSync.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARSync/ARSync-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARSync/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARSync/ARSync.modulemap";
+				PRODUCT_NAME = ARSync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46A4F8C71912BCBE4C678A13B0E44AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D435EA572012A54F2E1FE9E7296546C8 /* ARSync.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARSync/ARSync-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARSync/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARSync/ARSync.modulemap";
+				PRODUCT_NAME = ARSync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		768C52B2152A065E2B5E18EB1C79AA79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38A7B16A9EDDAB55748AD85EE90E424 /* Pods-ARSync_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARSync_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARSync_Tests/Pods-ARSync_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARSync_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		89FD7539B2510B83E9B720E17B652F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9348233A673744C0C381CBC90E89D3 /* Pods-ARSync_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARSync_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARSync_Example/Pods-ARSync_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARSync_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93E3747B301C5D8638B2280C23CA4DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAA333F0062F3A774FF494256275C95B /* Pods-ARSync_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARSync_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARSync_Example/Pods-ARSync_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARSync_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD69D807876A5384F2FAB7C1752702D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E186BBB78E6CE57A9802959423D114A /* Pods-ARSync_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARSync_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARSync_Tests/Pods-ARSync_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARSync_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872A8B6340B7AAF5EDF37ADE5E50952B /* Build configuration list for PBXNativeTarget "ARSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C25B5B173ED81B9C9084BA381A641F /* Debug */,
+				46A4F8C71912BCBE4C678A13B0E44AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A881CB1F9A6635B2290AB080A82DEC07 /* Build configuration list for PBXNativeTarget "Pods-ARSync_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E3747B301C5D8638B2280C23CA4DB0 /* Debug */,
+				89FD7539B2510B83E9B720E17B652F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2E2DF680AEA5A8143038B4A4AF52B92 /* Build configuration list for PBXNativeTarget "Pods-ARSync_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				768C52B2152A065E2B5E18EB1C79AA79 /* Debug */,
+				FD69D807876A5384F2FAB7C1752702D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

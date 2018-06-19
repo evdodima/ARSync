@@ -1,0 +1,6 @@
+framework module ARSync {
+  umbrella header "ARSync-umbrella.h"
+
+  export *
+  module * { export * }
+}

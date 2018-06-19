@@ -1,0 +1,16 @@
+PODS:
+  - ARSync (0.1.0)
+
+DEPENDENCIES:
+  - ARSync (from `../`)
+
+EXTERNAL SOURCES:
+  ARSync:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ARSync: b6635e6042bef09cd846f53b7a11ee37650db4b1
+
+PODFILE CHECKSUM: 5a5c86dab7da1d2db8136fbf98191717a9125b12
+
+COCOAPODS: 1.4.0

@@ -40,11 +40,11 @@
 		607FACE51AFB9204008FA782 /* ARSync_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARSync_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		85FF4647321EDDB9849CD462 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8CC59ECE36E9917BD116FC19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		85FF4647321EDDB9849CD462 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8CC59ECE36E9917BD116FC19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9ED653A6A9D723E8739B6F6D /* Pods-ARSync_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARSync_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARSync_Tests/Pods-ARSync_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B774A7E899772FAD2ABCE0F5 /* Pods_ARSync_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARSync_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF2F6419FB669909E84E6563 /* ARSync.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ARSync.podspec; path = ../ARSync.podspec; sourceTree = "<group>"; };
+		BF2F6419FB669909E84E6563 /* ARSync.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ARSync.podspec; path = ../ARSync.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D5BEC91E46ABC54B76FF741A /* Pods-ARSync_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARSync_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARSync_Tests/Pods-ARSync_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D89FF3AF1940BBBB95CC62D4 /* Pods-ARSync_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARSync_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARSync_Example/Pods-ARSync_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
